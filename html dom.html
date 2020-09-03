@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the below button to create a CODE element with some text</p>
+<button onclick="createCode()">CREATE</button><br><br>
+<script>
+   function createCode() {
+      var x = document.createElement("CODE");
+      var t = document.createTextNode("print('HELLO WORLD')");
+      x.appendChild(t);
+      document.body.appendChild(x);
+   }
+</script>
+</body>
+</html>
